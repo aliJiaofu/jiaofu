@@ -1,0 +1,9 @@
+[ 2016-03-19T14:34:13+08:00 ] ::1 /jf/index.php/Home/Homework/uploadHomework
+ERR: 模板不存在:F:/XAMPP/htdocs/jf/Home/View/Homework/uploadHomework.html
+
+[ 2016-03-19T15:41:52+08:00 ] ::1 /jf/index.php/Home/Homework/localhost/jf/Public/upload/homework/123/20141002496/bXlzcWxfYWRkX2VzY2FwZS5waHA=.php
+ERR: 非法操作:localhost
+
+[ 2016-03-19T20:50:18+08:00 ] ::1 /jf/index.php/Home/Homework/download_file
+ERR: 非法操作:download_file
+

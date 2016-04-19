@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table border="1">
+    <tr align="center">
+        <td>任课教师</td>
+        <td>课程号</td>
+        <td>课程名</td>
+        <td>上课时间</td>
+        <td>上课地点</td>
+        <td>创建时间</td>
+        <td>布置作业</td>
+    </tr>
+    <volist name="teaches" id="te">
+        <tr>
+            <td>{$ins_name}</td>
+            <td>{$te.course_num}</td>
+            <td>{$te.course_name}</td>
+            <td>{$te.course_time}</td>
+            <td>{$te.course_address}</td>
+            <td>{$te.create_time}</td>
+            <td><a href="__URL__/homework_relase?course_num={$te.course_num}">布置</a> </td>
+        </tr>
+    </volist>
+</table>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+#screen{
+    margin: auto;
+    padding:0;
+    position:absolute;
+    width:100%;
+    background: url('../../img/course/screen.jpg');
+}
+#screen #modify{
+    margin:auto;
+    background:#fff;
+    width:600px;
+    height:100%;
+    text-align:center;
+    line-height:30px;
+}
+#screen #modify p{
+    font-size:16px;
+    margin:0;
+    padding:0;
+    margin-bottom: 50px;
+}
+.email_type{
+    width: 173px;
+    border:solid #000000 thin;
+    border-top:none;
+    background: #fff;
+    position: absolute;
+    margin-left:250px;
+    margin-top:-2px;
+    z-index: 9998;
+    display: none;
+}
+.email_type ul{
+    margin:0px;
+    padding:0;
+}
+.email_type ul li{
+    list-style: none;
+    text-align: left;
+    text-indent: 1em;
+    cursor: pointer;
+    line-height: 1.6em;
+}

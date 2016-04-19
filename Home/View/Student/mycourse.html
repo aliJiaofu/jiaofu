@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/student/mycourse.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/css/student/mycourse.css" type="text/css"/>
+</head>
+<body>
+<table border="1">
+    <tr align="center">
+        <td>姓名</td>
+        <td>课程号</td>
+        <td>课程名</td>
+        <td>上课时间</td>
+        <td>上课地点</td>
+        <td>创建时间</td>
+        <td>查看作业</td>
+    </tr>
+    <volist name="takes" id="ta">
+        <tr>
+            <td>{$stu_name}</td>
+            <td>{$ta.course_num}</td>
+            <td>{$ta.course_name}</td>
+            <td>{$ta.course_time}</td>
+            <td>{$ta.course_address}</td>
+            <td>{$ta.create_time}</td>
+            <td><span class="check_homework" id="check_homework_{$ta.course_id}">查看</span></td>
+        </tr>
+    </volist>
+</table>
+
+</body>
+</html>

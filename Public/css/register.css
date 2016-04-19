@@ -1,0 +1,70 @@
+.getcode{
+    height:20px;
+    width:200px;
+
+}
+#deptname_box{
+    display:none;
+}
+#getcode{
+
+    height: 20px;
+    width:64px;
+    background:#999999;
+}
+#code{
+    width:100px;
+    height:20px;
+}
+.err_message{
+    color:red;
+    font-size:12px;
+}
+#register .email_type{
+
+    width:170px;
+    background: #f1f1f1;
+    position: absolute;
+    margin-left:80px;
+    margin-top:0;
+    z-index: 9998;
+    opacity: 0.8;
+    display: none;
+}
+#register .email_type ul{
+    padding: 0;
+}
+#register .email_type ul li{
+    padding: 0px;
+    list-style-type:none;
+    color:brown;
+    text-align: center;
+    text-indent:0;
+    cursor: pointer;
+    line-height:15px;
+}
+.window{
+    width: 25em;
+    height: 20em;
+    z-index: 9999;
+    margin-left: 9em;
+    position: absolute;
+    display: none;
+    background: yellowgreen;
+}
+.window p{
+    color:#333;
+    margin-top: 7em;
+}
+.window p strong{
+    font-weight: lighter;
+    font-size: 1.4em;
+    line-height: 2.5em;
+}
+.window span{
+    font-size: 0.8em;
+}
+.window span span{
+    color: #333;
+    cursor: pointer;
+}

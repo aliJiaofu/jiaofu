@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/student/index.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/css/student/index.css" type="text/css"/>
+
+</head>
+<body>
+
+<div id="screen">
+    <div id="modify">
+        <p>{$stu_name}同学，欢迎登陆教辅系统，请完成以下信息的填写激活账号，否则无法进行下一步操作，谢谢合作</p>
+        <form id="modify_info" action="__URL__/modify_info" method="post">
+            学　　院：<select name="dept_id"id="dept">
+               <option value="" style="display: none">请选择</option>
+                <volist name="depart" id="de">
+                    <option value="{$de.dept_id}">{$de.dept_name}</option>
+                </volist>
+            	　　　</select>
+            <span id="err_5"></span>
+            <br/><br/>
+            专　　业：<input id="major_name"type="text" name="major_name"/>
+                    <span id="err_0"></span>
+            <br/><br/>
+            年　　级：<input id="grade"type="text" name="grade"/>
+            <span id="err_1"></span>
+            <br/><br/>
+            性　　别：<select name="sex">
+                <option value="男" selected="selected">男</option>
+                <option value="女">女</option>
+            </select><br/><br/>
+            邮　　箱：<input id="email"type="text" name="email"/>
+                    <div class="email_type">
+                        <ul>
+                            <li><span></span>@qq.com</li>
+                            <li><span></span>@163.com</li>
+                            <li><span></span>@sina.com</li>
+                            <li><span></span>@sohu.com</li>
+                        </ul>
+                    </div>
+            <span id="err_2"></span>
+            <br/><br/>
+            密　　码：<input id="password"type="password" name="password"/>
+            <span id="err_3"></span>
+            <br/><br/>
+            确认密码：<input id="repeat"type="password" name="repeat"/>
+            <span id="err_4"></span>
+            <br/><br/>
+            <input id="modify_submit"type="button" value="确认"/>
+        </form>
+    </div>
+</div>
+<input type="hidden" name="stu_status" value="{$stu_status}"/>
+<a href="__APP__/Home/Index/logout">lougout</a>
+<a href="__URL__/mycourse">查看作业</a>
+</body>
+</html>

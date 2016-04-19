@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/homework/h_relase.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/css/homework/h_relase.css" type="text/css"/>
+</head>
+<body>
+<center>
+<div id="course_info">
+基础信息<br/><br/>
+课程名称：{$course.name}　　学年学期：{$course.time}
+</div>
+<div id="homework">
+<table>
+    <tr id="info" align="center">
+        <td>布置时间</td>
+        <td>作业内容</td>
+        <td>截止时间</td>
+        <td>作业详情</td>
+    </tr>
+    <volist name="how_from" id="how">
+        <tr class="homework" align="center">
+            <td>{$how.create_time}</td>
+            <td>{$how.homework_name}</td>
+            <td>{$how.homework_deadline}</td>
+            <td>{$how.homework_detail}</td>
+        </tr>
+    </volist>
+</table>
+</div>
+<div style="width:400px;">
+<form action="__URL__/do_relase" method="post" id="homework_relase"enctype="multipart/form-data">
+            <input type="hidden" name="course_id" value="{$course.id}+{$course.course_num}"/>
+    作业内容：<input type="text" id="name"name="homework_name"/><br/><br/>
+    作业详情：<textarea name="homework_detail"></textarea><br/>
+    截止时间：<input class="time"type="text" name="year"/>年
+            <input class="time"type="text" name="month"/>月
+            <input class="time"type="text" name="day"/>日<br/>
+            <input type="submit" id="relase" value="确认"/>
+</form>
+</div>
+</center>
+</body>
+</html>

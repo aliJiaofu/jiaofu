@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/student/first_login.js"></script>
+</head>
+<body>
+<center>
+    <form id="first_login"action="__URL__/check_firstlogin" method="post">
+        学校：<select id="school" name="school_id">
+                <option value="" style="display: none">请选择</option>
+                <volist name="school" id="sc">
+                    <option value="{$sc.id}">{$sc.name}</option>
+                </volist>
+        </select>
+        <span id="err_0"></span>
+        <br/><br/>
+        姓名：<input id="name"type="text" name="name"/>
+        <span id="err_1"></span>
+        <br/><br/>
+        学号：<input id="stu_number"type="text" name="stu_number"/>
+        <span id="err_2"></span>
+        <br/><br/>
+        初始密码：<input id="default" type="password" name="default"/>
+        <span id="err_3"></span><br/><br/>
+        <input id="button"type="button" value="确认登陆"/>
+    </form>
+</center>    
+</body>
+</html>

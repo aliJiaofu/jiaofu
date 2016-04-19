@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding:0px;
+}
+#screen{
+    margin: auto;
+    padding:0;
+    position:absolute;
+    width:100%;
+    display:none;
+    background: url('../../img/course/screen.jpg');
+}
+#excel{
+    text-align:center;
+    background:#fff;
+    border:solid thin #000;
+    height:446px;
+    width:536px;
+    margin:auto;
+    margin-top:150px;
+}
